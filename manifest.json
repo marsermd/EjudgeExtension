@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	
+	"content_scripts": [
+	  {
+		"matches": [
+		  "<all_urls>"
+		],
+		"js": ["jquery-3.1.0.min.js", "background.js"]
+	  }
+	],
+	
+	"permissions": [
+	  "tabs"
+	],
+	
+	"name": "Ejudge Extention",
+	
+	"description": "
+	This extetnion works automatically on ejudge.lksh.ru/cgi-bin/new-judge/
+	It notifies you if you have Pending Review submissions (if you are filtering by 'status == PR')",
+
+	"version": "0.1"
+}
